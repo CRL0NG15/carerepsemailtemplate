@@ -1,159 +1,459 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+
 <html>
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>CareReps Newsletter</title>
-        <meta name="description" content="/"> 
+        <title></title>
+        <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-       <style type="text/css">
-          @import url('https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:wght@500&display=swap');
+        <style type="text/css">
+            body {
+                margin: 0;
+                background-color: #ccc;
+            }
+            table{
+                border-spacing: 0;
+            }
+            td{
+                padding: 0;
+            }
+            img{
+                border: 0;
+            }
 
+            @media only screen and (max-width: 600px){
+            .wrapper{
+                width: 100%;
+                table-layout: fixed;
+                background-color: #ccc;
+                padding-bottom: 60px;
+            }
+            .main{
+                background-color: #fff;
+                margin: 0 auto;
+                width: 100%;
+                max-width: 600px;
+                border-spacing: 0;
+                font-family: Arial, Helvetica, sans-serif;
+                color: #171a1b;
+            }
 
-
-
-        Body{ 
-            margin: 0;
-            background-color: #fff;
-
-        }
-
-        table{
-            border-spacing: 0;
-        }
-
-        td{
-            padding: 0;
-
-        }
-
-        img{
-            border: 0;
-        }
-
-        .wrapper{
-            width: 100%;
-            background-color: #fff;
-            table-layout: fixed;
-            padding-bottom: 60px;
-        }
-        .main{
-            margin: 0 auto;
-            background-color: #fff;
-            width: 100%;
-            max-width: 600px;
-            border-spacing: 0;
-            font-family: 'Inter', sans-serif;
-            color: #171717;
-
-        }
-
-        .two-columns{
-            text-align: center;
-            font-size: 0;
-
-        }
-
-        .two-columns .column{
-            width: 100%;
-            max-width: 300px;
-            display: inline-block;
-            vertical-align: top;
-            text-align: center;
-        }
-
-        .one-column{
-            align-items: center;
-            text-align: center;
-            display: inline-flex;
-        }
-
-        .one-column .column{
-            width: 100%;
-            max-width: 600px;
-            display: flex;
-            flex-direction: column;
            
-            background-color: #0C2925;
+            .two-column {
+                text-align: center;
+                font-size:0;
+
+            }
+            .two-column .column {
+                width: 100%;
+                max-width: 300px;
+                display: inline-block;
+                vertical-align: top;
+                text-align: center;
+            }
+
+            .two-column .socials{
+                padding: 75px 90px ;
+            }
+        
+            .three-column {
+                text-align: center;
+                font-size: 0;
+                padding: 11px 0 25px;
+            }
+            .three-column .column {
+                width: 100%;
+                max-width: 200px;
+                display: inline-block;
+                vertical-align: top;
+                text-align: center;
+            }
+            .three-column .padding {
+                padding: 15px;
+            }
+            .three-column .content {
+                font-size: 15px;
+                line-height: 20px;
+                padding: 0 5px;
+               
+                
+
+            }
+            .two-column .last{
+                padding: 15px 0;
+            }
+            .two-column .padding{
+                padding: 20px;
+            }
+            .two-column .content{
+                font-size: 15px;
+                line-height: 20px;
+                text-align: left;
+            }
+            .button{
+                background-color: #fff;
+                color: #171a1b;
+                text-decoration: none;
+                padding: 12px 20px;
+                border-radius: 22px;
+                font-weight: bold;
+            }
+            .button-dark{
+                background-color: #FF8601;
+                color: #fff;
+                text-decoration: none;
+                padding: 12px 20px;
+                border-radius: 22px;
+                font-weight: bold;
+            }
         }
 
-        h1{
-            text-align: center;
-            color: #fff;
-            font-family: 'Montserrat', sans-serif;
-            text-transform: uppercase;
+            @media only screen and (max-width: 599px){
+            .wrapper{
+                width: 100%;
+                table-layout: fixed;
+                background-color: #ccc;
+                padding-bottom: 60px;
+            }
+            .main{
+                background-color: #fff;
+                margin: 0 auto;
+                width: 100%;
+                max-width: 600px;
+                border-spacing: 0;
+                font-family: Arial, Helvetica, sans-serif;
+                color: #171a1b;
+            }
+
+           
+            .two-column {
+                text-align: center;
+                font-size:0;
+
+            }
+            .two-column .column {
+                width: 100%;
+                max-width: 300px;
+                display: inline-block;
+                vertical-align: top;
+                text-align: center;
+            }
+
+            .two-column .socials{
+                padding: 10px  90px 23px ;
+            }
+        
+            .three-column {
+                text-align: center;
+                font-size: 0;
+                padding: 11px 0 25px;
+            }
+            .three-column .column {
+                width: 100%;
+                max-width: 200px;
+                display: inline-block;
+                vertical-align: top;
+                text-align: center;
+            }
+            .three-column .padding {
+                padding: 15px;
+            }
+            .three-column .content {
+                font-size: 15px;
+                line-height: 20px;
+                padding: 0 5px;
+               
+                
+
+            }
+            .two-column .last{
+                padding: 15px 0;
+            }
+            .two-column .padding{
+                padding: 20px;
+            }
+            .two-column .content{
+                font-size: 15px;
+                line-height: 20px;
+                text-align: center;
+            }
+            .button{
+                background-color: #fff;
+                color: #171a1b;
+                text-decoration: none;
+                padding: 12px 20px;
+                border-radius: 22px;
+                font-weight: bold;
+            }
+            .button-dark{
+                background-color: #FF8601;
+                color: #fff;
+                text-decoration: none;
+                padding: 12px 20px;
+                border-radius: 22px;
+                font-weight: bold;
+            }
         }
 
-
-       </style>
+        </style>
     </head>
     <body>
         <center class="wrapper">
             <table class="main" width="100%">
-            <!--Top Border-->
-            <tr>
-                <td height="16" style="background-color: #FF8601;"></td>
-            </tr>
-          
-            <!-- Logo Section-->
-           <tr>
-            <td style="padding: 14px 0 4px;">
-                <table width="100%">
-                    <tr>
-                        <td class="two-columns">
-                            <table class="column">
+                <!--TOP BORDER-->
+                <tr>
+                    <td height="16" style="background-color: #FF8601;"></td>
+                </tr>
+
+                <!--LOGO SECTION-->
+                <tr>
+                    <td style="padding: 14px 0 4px;">
+                        <table width="100%">
                             <tr>
-                                <td style="padding: 0 67px 72px">
-                                    <a href="/"><img src="img/CareReps Logo Idea (1).png" alt="CareReps Medical Staffing" title="CareReps Medical Staffing" width="153"> </a>
+                                <td class="two-column">
+                                    <table class="column">
+                                        <tr>
+                                            <td style="padding: 0 62px 10px;">
+                                                <a href="/"><img src="img/CareReps Logo Idea (1).png" width="180" alt="CareReps Medical Staffing, LLC"></a>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <table class="column">
+                                        <tr>
+                                            <td class="socials">
+                                                <a href="/"><img src="img/LinkedIn.png" width="30"></a>
+                                                <a href="/"><img src="img/Facebook.png" width="30"></a>
+                                                <a href="/"><img src="img/Instagram.png" width="30"></a>
+                                                <a href="/"><img src="img/TwitterX.png" width="30"></a>
+                                                
+                                            
+                                            
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <!--BANNER TEXT-->
+
+                <tr>
+                    <td style="text-align: center; background-color: #0C2925; padding: 5px; ">
+                        <a href="#"   style=" color:#fff; text-decoration: none; text-transform: uppercase; "> <h1>Comapny Newsletter</h1></a>
+                    </td>
+                </tr>
+                <!--BANNER IMG-->
+                <tr>
+                    <td style="text-align: center; padding-top: 30px;">
+                        <a href="#"><img src="img/Tracking health with gadgets.png" width="60%" max-width="100%" ></a>
+                    </td>
+                </tr>
+
+                <!--LINE-->
+
+                <tr>
+                    <td height="1" style="background-color: #0C2925; " max-width="50"></td>
+                </tr>
+
+                <!--TITLE, TEXT, & BUTTON-->
+                <tr>
+                    <td style="padding: 15px 0 50px;">
+                        <table width="100%">
+                            <tr>
+                                <td style="text-align: center; padding: 15px;">
+                                    <p style="font-size: 20px; font-weight: bold;">Start Your Message Here</p>
+                                    <p style="font-size: 15px; padding: 5px 0 15px;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, eius beatae nulla magni expedita aliquam cumque. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum dolor eveniet ipsa maiores nisi. Animi totam quisquam libero nostrum, deserunt provident eveniet mollitia a repellat ipsum, et numquam praesentium nemo?Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni tempora quos accusantium magnam excepturi. Maiores aut molestias sint beatae voluptatibus officiis ducimus reprehenderit laborum, ut iusto optio aliquam repudiandae id?</p>
+                                    
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+
+                 <!--TWO COLUMN SECTION-->
+                 <tr>
+                    <td style="background-color: #0C2925; color: #fff;">
+                        <table width="100%">
+                            <tr>
+                                <td class="two-column last">
+                                    <table class="column">
+                                        <tr>
+                                            <td class="padding">
+                                                <table class="content">
+                                                    <tr>
+                                                        <td>
+                                                            <a href="#"><img src="img/Online medicine.png" alt="" width="260" style="max-width: 260px;"></a>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <table class="column">
+                                        <tr>
+                                            <td class="padding">
+                                                <table class="content">
+                                                    <tr>
+                                                        <td style="padding-bottom: 30px;">
+                                                            <p style="font-weight: bold; font-size: 18px;">Text Post
+
+                                                            </p>
+                                                            <p style="padding-bottom: 16px;">Lorem ipsum dolor sit amet consectetur adipisicing elite.
+        
+                                                            </p>
+                                                            <a href="#" class="button">Read More</a>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                                
+                                            </td>
+                                        </tr>
+                                    </table>
                                 </td>
                             </tr>
 
-                            </table>
-                            <table class="column">
-                                       <tr>
-                                        <td style="padding: 72px 89px;">
-                                            <a href="/"><img src="img/LinkedIn.png" alt="LinkedIn" width="30" title="LinkedIn"></a>
-                                            <a href="/"><img src="img/Facebook.png" alt="facebook" width="30" title="facebook"></a>
-                                            <a href="/"><img src="img/Instagram.png" alt="Instagram" width="30" title="Instagram"></a>
-                                            <a href="/"><img src="img/TwitterX.png" alt="TwitterX" width="30" title="TwitterX"></a>
-                                        </td>
-                                       </tr>
-                            </table>
-                        </td>
-                    </tr>
-                </table>
-            </td>
-           </tr>
-            <!--Header Title-->
-            <tr>
-                <td>
-                    <table>
-                        <tr>
-                            <td class="one-column">
-                                <table class="column">
-                                    <tr>
-                                        <td>
-                                            <h1>Company Newsletter</h1>
-                                        </td>
-                                    </tr>
-                                </table>
-                            </td>
-                        </tr>
-                    </table>
-                </td>
-            </tr>
-            <!--One Column Section-->
-            <!-- One Column Section-->
-            <!--Two Column Section-->
-            <!--Three Colum Section-->
-            <!--One Column Section-->
-            <!--Footer Section-->
-        </table>
+
+                        </table>
+                    </td>
+                </tr>
+                <!--THREE COLUMN HEADER-->
+                <tr>
+                    <td style="text-align: center;  padding: 30px; ">
+                        <a href="#"   style=" color:#FF8601;  text-transform: uppercase; "> <h1>Our Pricing</h1></a>
+                    </td>
+                </tr>
+                <!--THREE COLUMN SECTION-->
+                <tr>
+                    <td>
+                        <table width="100%">
+                            <tr>
+                                <td class="three-column">
+                                    <table class="column">
+                                        <tr>
+                                            <td class="padding">
+                                                <table class="content">
+                                                   <!-- 
+                                                    If You ever decide that you want images above your banners use this code here, if not leave alone.
+                                                    <tr>
+                                                        <td>
+                                        
+                                                            <a href="#"><img src="8-HTML-Email-Tut/8. Modern Email Starter Files/img/email.png" alt="" width="130" style="max-width: 130px;"></a>
+
+                                                    </td>
+                                                    </tr>-->
+                                                    <tr>
+                                                        <td>
+                                                            <span style="font-weight: bold; font-family: 17px; background-color: #0C2925; color: #fff; padding: 10% 35.7% 11%; text-transform: uppercase; " >$99.00</span>
+                                                            <p style=" padding: 30px 5px  30px; border: #0C2925 solid 1px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam libero, odio est.<br><br>
+                                                            <a href="#" class="button-dark">Buy Now</a></p>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                                
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <table class="column">
+                                        <tr>
+                                            <td class="padding">
+                                                <table class="content">
+                                                   <!-- 
+                                                    If You ever decide that you want images above your banners use this code here, if not leave alone.
+                                                    <tr>
+                                                        <td>
+                                        
+                                                            <a href="#"><img src="8-HTML-Email-Tut/8. Modern Email Starter Files/img/email.png" alt="" width="130" style="max-width: 130px;"></a>
+
+                                                    </td>
+                                                    </tr>-->
+                                                    <tr>
+                                                        <td>
+                                                            <span style="font-weight: bold; font-family: 17px; background-color: #0C2925; color: #fff;  padding: 10% 35.7% 11%; text-transform: uppercase; " >$99.00</span>
+                                                            
+                                                            <p style=" padding: 30px 5px  30px; border: #0C2925 solid 1px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam libero, odio est.<br><br>
+                                                            <a href="#" class="button-dark">Buy Now</a></p>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                                
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <table class="column">
+                                        <tr>
+                                            <td class="padding">
+                                                <table class="content">
+                                                   <!-- 
+                                                    If You ever decide that you want images above your banners use this code here, if not leave alone.
+                                                    <tr>
+                                                        <td>
+                                        
+                                                            <a href="#"><img src="8-HTML-Email-Tut/8. Modern Email Starter Files/img/email.png" alt="" width="130" style="max-width: 130px;"></a>
+
+                                                    </td>
+                                                    </tr>-->
+                                                    <tr>
+                                                        <td>
+                                                            <span style="font-weight: bold; font-family: 17px; background-color: #0C2925; color: #fff;  padding: 10% 35.7% 11%; text-transform: uppercase; " >$99.00</span>
+                                                            <p style=" padding: 30px 5px  30px; border: #0C2925 solid 1px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam libero, odio est.<br><br>
+                                                            <a href="#" class="button-dark">Buy Now</a></p>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                                
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+
+                        </table>
+                    </td>
+                </tr>
+
+                 <!--TITLE, TEXT, & BUTTON-->
+                 <tr>
+                    <td style="padding: 15px 0 50px;">
+                        <table width="100%">
+                            <tr>
+                                <td style="text-align: center; padding: 15px;">
+                                    <p style="font-size: 20px; font-weight: bold;">Start Your Text Here</p>
+                                    <p style="font-size: 15px; padding: 5px 0 15px;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, eius beatae nulla magni expedita aliquam cumque.</p>
+                                    
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+               
+                <!-- FOOTER SECTION -->
+                <tr>
+                    <td style="background-color: #0C2925;">
+                        <table width="100%">
+                            <tr>
+                                <td style="text-align: center; padding: 45px 20px; color: #fff;">
+                                    <a href="#"><img src="img/Group 1.png" alt="" width="180"></a>
+                                    <p style="padding: 10px;">Email Us: Sales@wearecarereps.com</p>
+                                    <p style="padding: 10px;">123 Abby Road City, State 123456</p>
+                                    <a href="/"><img src="img/LinkedIn_white.png" width="30"></a>
+                                    <a href="/"><img src="img/Facebook_white.png" width="30"></a>
+                                    <a href="/"><img src="img/Instagram_white.png" width="30"></a>
+                                    <a href="/"><img src="img/TwitterX_white.png" width="30"></a>
+                                    <p>SUBSCRIBE</p>
+                                </td>
+                            </tr>
+
+                        </table>
+                    </td>
+                </tr>
+
+            </table>
+
         </center>
+     
         
         
     </body>
